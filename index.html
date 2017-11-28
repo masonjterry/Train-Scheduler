@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Scheduler</title>
+    <!-- CSS Reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Jumbotron -->
+      <head>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="text-center">Train Schedule</h1>
+          <p class="text-center">Add your train to the list</p>
+        </div>
+      </div>
+      </head>
+      <!-- Table -->
+      <section>
+        <table class="table">
+          <thead id="table-head">
+            <tr>
+            <th>Train Name</th>
+            <th>Destination</th>
+            <th>Frequency (min)</th>
+            <th>Next Arrival</th>
+            <th>Minutes Away</th>
+          </tr>
+          </thead>
+          <tbody id="table-body">
+
+          </tbody>
+        </table>
+      </section>
+      <!-- Input -->
+      <section>
+        <form>
+          <div class="form-group">
+            <label for="train-name">Train Name</label>
+            <input id="train-name" class="form-control" type="text" name="train-name" placeholder="Train Name">
+            <br>
+            <label for="destination">Destination</label>
+            <input id="destination" class="form-control" type="text" name="destination" placeholder="Destination">
+            <br>
+            <label for="train-time">Train Time</label>
+          <input id="train-time" class="form-control" type="text" name="train-time" placeholder="HHMM">
+            <br>
+            <label for="frequency">Frequency</label>
+            <input id="frequency" class="form-control" type="text" name="frequency" placeholder="30 minutes (number only)">
+            <br>
+            <input id="submit" type="submit">
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
+  </body>
+</html>

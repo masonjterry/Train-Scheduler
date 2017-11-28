@@ -1,0 +1,18 @@
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.jumbotron {
+  background-color: #ff6850;
+  color: #fff;
+}
+
+section {
+  background-color: #ddd;
+}
+
+thead {
+  background-color: #77f;
+  color: #fff;
+}
